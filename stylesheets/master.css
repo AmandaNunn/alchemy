@@ -80,10 +80,10 @@ body {
 #nav {
   background: transparent; }
   #nav #navbar-menu div a {
-    color: #0094B8;
+    color: #3A9DBB;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    border: 2px solid #1F92B4;
+    border: 2px solid #3A9DBB;
     padding: 10px;
     margin: 20px; }
 
@@ -117,7 +117,7 @@ body {
           font-family: 'Futura', sans-serif;
           font-weight: 700;
           font-size: 100px;
-          color: #0094B8;
+          color: #3A9DBB;
           margin-top: 150px; }
         #hero .hero-body .container .content .button-highlight {
           display: flex;
@@ -127,12 +127,52 @@ body {
           width: 45%;
           height: 375px;
           margin-top: 30px;
-          background-color: #0094B8b3; }
+          background-color: #3A9DBBB3; }
         #hero .hero-body .container .content .button-hero {
-          border: 4px #EFF3F5 solid;
+          border: 4px #f6f8f9 solid;
           font-family: 'Ubuntu', sans-serif;
           font-size: 1.5em;
           font-weight: 700;
-          color: #EFF3F5;
+          color: #f6f8f9;
           padding: 10px;
           z-index: 10; }
+
+#sub-hero {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  #sub-hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    #sub-hero .container .content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      #sub-hero .container .content h1 {
+        width: 100%;
+        background-color: #61B1C9;
+        color: #f6f8f9;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 700;
+        font-family: 'Futura', sans-serif;
+        padding: 20px 0px;
+        letter-spacing: 3px; }
+      #sub-hero .container .content p {
+        font-size: 1.3em;
+        font-family: 'Avenir Next', sans-serif;
+        letter-spacing: 2px;
+        font-weight: 600; }
+      #sub-hero .container .content a {
+        font-size: 1.3em;
+        font-family: 'Avenir Next', sans-serif;
+        letter-spacing: 2px;
+        font-weight: 600;
+        color: #61B1C9;
+        text-decoration: underline; }

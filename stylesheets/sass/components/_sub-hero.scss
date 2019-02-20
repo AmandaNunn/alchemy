@@ -1,0 +1,49 @@
+#sub-hero{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .content{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1{
+        width: 100%;
+        background-color: $light-blue;
+        color: $alchemy-white;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 700;
+        font-family: 'Futura', sans-serif;
+        padding: 20px 0px;
+        letter-spacing: 3px;
+      }
+
+      p{
+        font-size: 1.3em;
+        font-family: 'Avenir Next', sans-serif;
+        letter-spacing: 2px;
+        font-weight: 600;
+      }
+      a{
+        font-size: 1.3em;
+        font-family: 'Avenir Next', sans-serif;
+        letter-spacing: 2px;
+        font-weight: 600;
+        color: $light-blue;
+        text-decoration: underline;
+      }
+    }
+  }
+}
