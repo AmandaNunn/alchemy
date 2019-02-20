@@ -176,3 +176,27 @@ body {
         font-weight: 600;
         color: #61B1C9;
         text-decoration: underline; }
+
+#footer {
+  background-color: #2F2F2F;
+  height: 275px; }
+  #footer .container {
+    border-left: 1px solid #f6f8f9;
+    border-right: 1px solid #f6f8f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    #footer .container .content {
+      width: 33%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      #footer .container .content ul li {
+        list-style: none;
+        color: #f6f8f9;
+        font-family: 'Ubuntu', sans-serif;
+        margin-bottom: 20px; }
+
+* {
+  box-sizing: border-box; }

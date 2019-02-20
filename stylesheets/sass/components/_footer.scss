@@ -1,0 +1,29 @@
+#footer{
+  background-color: $alchemy-black;
+  height: 275px;
+
+  .container{
+    border-left: 1px solid $alchemy-white;
+    border-right: 1px solid $alchemy-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    .content{
+      width: 33%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      ul{
+        li{
+          list-style: none;
+          color: $alchemy-white;
+          font-family: 'Ubuntu', sans-serif;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
