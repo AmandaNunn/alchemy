@@ -2,13 +2,40 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Sass Boiler Plate</title>
+    <title>BP Bpoiler Plate</title>
+
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="/stylesheets/master.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="stylesheets/master.css" type="text/css">
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="scripts/core.js"></script>
 
   </head>
+
+
   <body>
-    <p>This is a simple HTML/CSS/SASS boiler plate. Ready for you. </p>
+    <nav id="nav" class="navbar container is-fixed-top" role="navigation" aria-label="main navigation">
+       <div class="navbar-brand">
+         <a class="navbar-item" href="#">
+           <img src="stylesheets/media/imgs/AlchemyThemeLogo.png" height="44">
+         </a>
+         <span class="navbar-burger burger" data-target="navbar-menu">
+           <span aria-hidden="true"></span>
+           <span aria-hidden="true"></span>
+           <span aria-hidden="true"></span>
+         </span>
+       </div>
+
+       <div id="navbar-menu" class="navbar-menu">
+         <div class="navbar-end">
+           <a class="navbar-item"href="#about">Home</a>
+           <a class="navbar-item"href="#portfolio">Blog</a>
+           <a class="navbar-item"href="#skills">About Us</a>
+           <a class="navbar-item"href="#contact">Account</a>
+         </div>
+       </div>
+     </nav>
   </body>
 </html>

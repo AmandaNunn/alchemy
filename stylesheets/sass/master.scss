@@ -1,7 +1,17 @@
-// ***Master SASS File***
+// *** MASTER SASS FILE ***
 
 // --- PARTIALS ---
 @import "helpers/reset";
 @import "helpers/typography";
 
-// --- MASTER CONTROLS ---
+@import "components/nav";
+
+
+// ---MASTER CONTROLS ---
+#navbar-menu{
+  div{
+    a{
+        color:  #0094B8;
+    }
+  }
+}
