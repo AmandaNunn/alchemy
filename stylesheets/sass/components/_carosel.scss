@@ -16,7 +16,55 @@
         cursor: pointer;
         transform: scale(1.05, 1.05);
       }
+    }
+    .carosel-card{
+      height: 475px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
+      h1{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        color: $alchemy-white;
+        font-size: 4em;
+      }
+    }
+    #left-carosel-card{
+      background-image: url('media/imgs/dandelion_grey.jpg');
+      background-size: cover;
+      background-position: center left;
+      background-repeat: no-repeat;
+    }
+
+    #featured-carosel-card{
+      background-image: url('media/imgs/happyJump_grey.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      .content{
+        width: 66%;
+        height: 300px;
+        background-color: $trans-blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+
+        h1{
+          font-size: 2em;
+        }
+        p{
+          line-height: 1.45em;
+        }
+      }
+    }
+    #right-carosel-card{
+      background-image: url('media/imgs/frollicking_grey.jpg');
+      background-size: cover;
+      background-position: right center;
+      background-repeat: no-repeat;
     }
 
     #right-arrow{

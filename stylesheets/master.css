@@ -241,6 +241,44 @@ body {
     #carosel .columns #left-arrow:hover {
       cursor: pointer;
       transform: scale(1.05, 1.05); }
+  #carosel .columns .carosel-card {
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #carosel .columns .carosel-card h1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 700;
+      color: #f6f8f9;
+      font-size: 4em; }
+  #carosel .columns #left-carosel-card {
+    background-image: url("media/imgs/dandelion_grey.jpg");
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat; }
+  #carosel .columns #featured-carosel-card {
+    background-image: url("media/imgs/happyJump_grey.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    #carosel .columns #featured-carosel-card .content {
+      width: 66%;
+      height: 300px;
+      background-color: #3A9DBBB3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px; }
+      #carosel .columns #featured-carosel-card .content h1 {
+        font-size: 2em; }
+      #carosel .columns #featured-carosel-card .content p {
+        line-height: 1.45em; }
+  #carosel .columns #right-carosel-card {
+    background-image: url("media/imgs/frollicking_grey.jpg");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat; }
   #carosel .columns #right-arrow {
     background: #61B1C9;
     width: 5%;
