@@ -1,8 +1,10 @@
 // CAROSEL
 
 #carosel{
+  padding: 0px;
   .columns{
     width: 100%;
+    margin: 0px;
 
     #left-arrow{
       background: $light-blue;

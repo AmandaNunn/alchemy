@@ -110,11 +110,13 @@ body {
     align-items: center;
     flex-direction: column; }
     #hero .hero-body .container {
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column; }
       #hero .hero-body .container .content {
+        height: 100%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -123,17 +125,18 @@ body {
           font-family: 'Futura', sans-serif;
           font-weight: 700;
           font-size: 100px;
-          color: #3A9DBB;
-          margin-top: 150px; }
+          color: #3A9DBB; }
         #hero .hero-body .container .content .button-highlight {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          width: 45%;
-          height: 375px;
-          margin-top: 30px;
+          width: 60%;
+          height: 60%;
           background-color: #3A9DBBB3; }
+          @media screen and (max-width: 638px) {
+            #hero .hero-body .container .content .button-highlight {
+              width: 400px; } }
         #hero .hero-body .container .content .button-hero {
           border: 4px #f6f8f9 solid;
           font-family: 'Ubuntu', sans-serif;
@@ -156,6 +159,7 @@ body {
     flex-direction: column; }
     #sub-hero .container .content {
       width: 100%;
+      padding-top: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -165,13 +169,13 @@ body {
         background-color: #61B1C9;
         color: #f6f8f9;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: 700;
         font-family: 'Futura', sans-serif;
         padding: 20px 0px;
         letter-spacing: 3px; }
       #sub-hero .container .content p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-family: 'Avenir Next', sans-serif;
         letter-spacing: 2px;
         font-weight: 600; }
@@ -229,68 +233,71 @@ body {
         font-family: 'Ubuntu', sans-serif;
         margin-bottom: 20px; }
 
-#carosel .columns {
-  width: 100%; }
-  #carosel .columns #left-arrow {
-    background: #61B1C9;
-    width: 5%;
-    height: 475px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    #carosel .columns #left-arrow:hover {
-      cursor: pointer;
-      transform: scale(1.05, 1.05); }
-  #carosel .columns .carosel-card {
-    height: 475px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    #carosel .columns .carosel-card h1 {
-      font-family: 'Ubuntu', sans-serif;
-      font-weight: 700;
-      color: #f6f8f9;
-      font-size: 4em; }
-  #carosel .columns #left-carosel-card {
-    background-image: url("media/imgs/dandelion_grey.jpg");
-    background-size: cover;
-    background-position: center left;
-    background-repeat: no-repeat; }
-  #carosel .columns #featured-carosel-card {
-    background-image: url("media/imgs/happyJump_grey.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-    #carosel .columns #featured-carosel-card .content {
-      width: 85%;
-      height: 300px;
-      background-color: #3A9DBBB3;
+#carosel {
+  padding: 0px; }
+  #carosel .columns {
+    width: 100%;
+    margin: 0px; }
+    #carosel .columns #left-arrow {
+      background: #61B1C9;
+      width: 5%;
+      height: 475px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 10px; }
-      #carosel .columns #featured-carosel-card .content h1 {
-        font-size: 2em; }
-      #carosel .columns #featured-carosel-card .content p {
-        line-height: 1.45em; }
-  #carosel .columns #right-carosel-card {
-    background-image: url("media/imgs/frollicking_grey.jpg");
-    background-size: cover;
-    background-position: right center;
-    background-repeat: no-repeat; }
-  #carosel .columns #right-arrow {
-    background: #61B1C9;
-    width: 5%;
-    height: 475px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    #carosel .columns #right-arrow:hover {
-      cursor: pointer;
-      transform: scale(1.05, 1.05); }
-    #carosel .columns #right-arrow img {
-      transform: rotateY(180deg); }
+      align-items: center; }
+      #carosel .columns #left-arrow:hover {
+        cursor: pointer;
+        transform: scale(1.05, 1.05); }
+    #carosel .columns .carosel-card {
+      height: 475px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #carosel .columns .carosel-card h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        color: #f6f8f9;
+        font-size: 4em; }
+    #carosel .columns #left-carosel-card {
+      background-image: url("media/imgs/dandelion_grey.jpg");
+      background-size: cover;
+      background-position: center left;
+      background-repeat: no-repeat; }
+    #carosel .columns #featured-carosel-card {
+      background-image: url("media/imgs/happyJump_grey.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+      #carosel .columns #featured-carosel-card .content {
+        width: 85%;
+        height: 300px;
+        background-color: #3A9DBBB3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px; }
+        #carosel .columns #featured-carosel-card .content h1 {
+          font-size: 2em; }
+        #carosel .columns #featured-carosel-card .content p {
+          line-height: 1.45em; }
+    #carosel .columns #right-carosel-card {
+      background-image: url("media/imgs/frollicking_grey.jpg");
+      background-size: cover;
+      background-position: right center;
+      background-repeat: no-repeat; }
+    #carosel .columns #right-arrow {
+      background: #61B1C9;
+      width: 5%;
+      height: 475px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #carosel .columns #right-arrow:hover {
+        cursor: pointer;
+        transform: scale(1.05, 1.05); }
+      #carosel .columns #right-arrow img {
+        transform: rotateY(180deg); }
 
 * {
   box-sizing: border-box; }
