@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -83,9 +84,14 @@ body {
     color: #3A9DBB;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    border: 2px solid #3A9DBB;
-    padding: 10px;
+    padding: 10px 15px;
     margin: 20px; }
+    #nav #navbar-menu div a:hover {
+      background: #f6f8f9; }
+    #nav #navbar-menu div a img {
+      max-height: 200px; }
+  #nav #navbar-menu div .acitve-page {
+    border: 2px solid #3A9DBB; }
 
 #hero {
   display: flex;
@@ -178,7 +184,11 @@ body {
         text-decoration: underline; }
 
 #header {
+<<<<<<< HEAD
   background-image: url("media/imgs/alchemy_Hero_Img_sat.jpg");
+=======
+  background-image: url(‘media/imgs/alchemy_Hero_Img_sat.jpg’);
+>>>>>>> 34f00a01a433cf5b7a4d89f1819b2f82341d5c5e
   background-repeat: no-repeat;
   background-size: cover;
   height: 625.34px;
@@ -186,7 +196,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+<<<<<<< HEAD
   #header .frogbox {
+=======
+  #header .blogbox {
+>>>>>>> 34f00a01a433cf5b7a4d89f1819b2f82341d5c5e
     background-color: #0094B8A7;
     margin-top: 20px;
     opacity: 70%;
@@ -194,9 +208,14 @@ body {
     width: 428px;
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     align-items: center;
     border: 1px red solid; }
     #header .frogbox h1 {
+=======
+    align-items: center; }
+    #header .blogbox h1 {
+>>>>>>> 34f00a01a433cf5b7a4d89f1819b2f82341d5c5e
       font-size: 70px;
       color: #F6F8F9;
       font-weight: 700;
@@ -223,6 +242,69 @@ body {
         color: #f6f8f9;
         font-family: 'Ubuntu', sans-serif;
         margin-bottom: 20px; }
+
+#carosel .columns {
+  width: 100%; }
+  #carosel .columns #left-arrow {
+    background: #61B1C9;
+    width: 5%;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #carosel .columns #left-arrow:hover {
+      cursor: pointer;
+      transform: scale(1.05, 1.05); }
+  #carosel .columns .carosel-card {
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #carosel .columns .carosel-card h1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 700;
+      color: #f6f8f9;
+      font-size: 4em; }
+  #carosel .columns #left-carosel-card {
+    background-image: url("media/imgs/dandelion_grey.jpg");
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat; }
+  #carosel .columns #featured-carosel-card {
+    background-image: url("media/imgs/happyJump_grey.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    #carosel .columns #featured-carosel-card .content {
+      width: 85%;
+      height: 300px;
+      background-color: #3A9DBBB3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px; }
+      #carosel .columns #featured-carosel-card .content h1 {
+        font-size: 2em; }
+      #carosel .columns #featured-carosel-card .content p {
+        line-height: 1.45em; }
+  #carosel .columns #right-carosel-card {
+    background-image: url("media/imgs/frollicking_grey.jpg");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat; }
+  #carosel .columns #right-arrow {
+    background: #61B1C9;
+    width: 5%;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #carosel .columns #right-arrow:hover {
+      cursor: pointer;
+      transform: scale(1.05, 1.05); }
+    #carosel .columns #right-arrow img {
+      transform: rotateY(180deg); }
 
 * {
   box-sizing: border-box; }
