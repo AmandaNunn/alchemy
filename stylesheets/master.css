@@ -177,6 +177,32 @@ body {
         color: #61B1C9;
         text-decoration: underline; }
 
+#header {
+  background-image: url("media/imgs/alchemy_Hero_Img_sat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 625.34px;
+  background-position: bottom, center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #header .frogbox {
+    background-color: #0094B8A7;
+    margin-top: 20px;
+    opacity: 70%;
+    height: 393px;
+    width: 428px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px red solid; }
+    #header .frogbox h1 {
+      font-size: 70px;
+      color: #F6F8F9;
+      font-weight: 700;
+      font-family: futura;
+      letter-spacing: 6.73px; }
+
 #footer {
   background-color: #2F2F2F;
   height: 275px; }
