@@ -1,0 +1,40 @@
+// CAROSEL
+
+#carosel{
+  .columns{
+    width: 100%;
+
+    #left-arrow{
+      background: $light-blue;
+      width: 5%;
+      height: 475px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.05, 1.05);
+      }
+
+    }
+
+    #right-arrow{
+      background: $light-blue;
+      width: 5%;
+      height: 475px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+        &:hover{
+          cursor: pointer;
+          transform: scale(1.05, 1.05);
+        }
+
+      img{
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}
