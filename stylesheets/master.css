@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -184,11 +183,7 @@ body {
         text-decoration: underline; }
 
 #header {
-<<<<<<< HEAD
   background-image: url("media/imgs/alchemy_Hero_Img_sat.jpg");
-=======
-  background-image: url(‘media/imgs/alchemy_Hero_Img_sat.jpg’);
->>>>>>> 34f00a01a433cf5b7a4d89f1819b2f82341d5c5e
   background-repeat: no-repeat;
   background-size: cover;
   height: 625.34px;
@@ -196,31 +191,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
-<<<<<<< HEAD
-  #header .frogbox {
-=======
-  #header .blogbox {
->>>>>>> 34f00a01a433cf5b7a4d89f1819b2f82341d5c5e
-    background-color: #0094B8A7;
-    margin-top: 20px;
-    opacity: 70%;
+  #header .title {
+    background-color: #3A9DBBB3;
+    margin-top: 70px;
+    margin-bottom: 20px;
     height: 393px;
-    width: 428px;
+    width: 440px;
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-    align-items: center;
-    border: 1px red solid; }
-    #header .frogbox h1 {
-=======
     align-items: center; }
-    #header .blogbox h1 {
->>>>>>> 34f00a01a433cf5b7a4d89f1819b2f82341d5c5e
-      font-size: 70px;
+    #header .title h1 {
+      margin-top: 20px;
+      font-size: 2em;
       color: #F6F8F9;
       font-weight: 700;
-      font-family: futura;
+      font-family: "Futura";
       letter-spacing: 6.73px; }
+
+.white-content {
+  width: 75%;
+  border: 1px solid red; }
 
 #footer {
   background-color: #2F2F2F;

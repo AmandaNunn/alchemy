@@ -8,24 +8,32 @@
    justify-content: center;
    align-items: center;
 
-   .blogbox{
-       background-color: #0094B8A7;
-       margin-top: 20px;
-       opacity:70%;
-       height:393px;
-       width:428px;
-       display:flex;
-       justify-content: center;
-       align-items: center;
-       border:1px red solid;
+     .title{
+         background-color:$trans-blue;
+         margin-top: 70px;
+         margin-bottom: 20px;
+         height:393px;
+         width:440px;
+         display:flex;
+         justify-content: center;
+         align-items: center;
 
-       h1{
-           font-size:70px;
-           color:#F6F8F9;
-           font-weight: 700;
-           font-family: futura;
-           letter-spacing: 6.73px;
 
-       }
+    h1{
+        margin-top: 20px;
+        font-size:2em;
+        color:#F6F8F9;
+        font-weight: 700;
+        font-family: "Futura";
+        letter-spacing: 6.73px;
+
+
+     }
    }
+}
+.white-content{
+  
+  width: 75%;
+  border:1px solid red;
+
 }
