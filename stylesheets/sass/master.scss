@@ -6,7 +6,16 @@
 @import "helpers/variables";
 @import "components/nav";
 @import "components/hero";
+<<<<<<< HEAD
 @import "components/header"
 
+=======
+@import "components/sub-hero";
+@import "components/header";
+@import "components/footer";
+>>>>>>> master
 
 // ---MASTER CONTROLS ---
+*{
+  box-sizing: border-box;
+}
