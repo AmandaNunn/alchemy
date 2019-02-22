@@ -208,10 +208,6 @@ body {
       font-family: "Futura";
       letter-spacing: 6.73px; }
 
-.white-content {
-  width: 75%;
-  border: 1px solid red; }
-
 #footer {
   background-color: #2F2F2F;
   height: 275px; }
@@ -295,6 +291,78 @@ body {
       transform: scale(1.05, 1.05); }
     #carosel .columns #right-arrow img {
       transform: rotateY(180deg); }
+
+#singlePost {
+  padding: 0px; }
+  #singlePost .columns {
+    display: flex;
+    justify-content: space-between; }
+  #singlePost .content {
+    height: 190px;
+    border: 1px solid red; }
+  #singlePost .content-blue {
+    background-color: #61B1C9;
+    height: 190px;
+    border: 1px solid #3A9DBBB3;
+    display: flex;
+    align-items: center; }
+    #singlePost .content-blue h2 {
+      color: #f6f8f9;
+      font-family: "Futura";
+      font-weight: 700;
+      font-size: 28px;
+      text-align: center;
+      line-height: 1.4em; }
+  #singlePost .bluebox {
+    height: 60%;
+    width: 60%;
+    background-color: #3A9DBBB3;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #singlePost .bluebox h4 {
+      color: #F6F8F9;
+      font-family: "Ubuntu";
+      font-size: 27px; }
+  #singlePost #one {
+    background-image: url("media/imgs/dramaticBackpack_grey.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    border: 5px #3A9DBBB3 solid; }
+  #singlePost #two {
+    background-image: url("media/imgs/sandyFun_grey.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    border: 5px #3A9DBBB3 solid; }
+  #singlePost #three {
+    background-image: url("media/imgs/dandelion_grey.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    border: 5px #3A9DBBB3 solid; }
+  #singlePost p {
+    padding-top: 70px;
+    padding-left: 20px;
+    letter-spacing: 0.3px;
+    line-height: 25px;
+    font-family: "Cardo";
+    font-size: 14px; }
+    #singlePost p::first-letter {
+      font-size: 30px;
+      color: #61B1C9; }
 
 * {
   box-sizing: border-box; }

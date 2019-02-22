@@ -1,0 +1,99 @@
+#singlePost{
+padding:0px;
+
+
+  .columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+  .content{
+    height:190px;
+    border:1px solid red;
+}
+
+
+  .content-blue{
+    background-color: $light-blue;
+    height: 190px;
+    border: 1px solid $trans-blue;
+    display: flex;
+    align-items: center;
+
+
+    h2{
+      color:$alchemy-white;
+      font-family:"Futura";
+      font-weight:700;
+      font-size:28px;
+      text-align: center;
+      line-height:1.4em;
+    }
+  }
+
+  .bluebox{
+    height:60%;
+    width:60%;
+    background-color: $trans-blue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    h4{
+      color:#F6F8F9;
+      font-family: "Ubuntu";
+      font-size: 27px;
+
+
+    }
+
+  }
+  #one{
+      background-image: url('media/imgs/dramaticBackpack_grey.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0px;
+      border:5px $trans-blue solid;
+  }
+  #two{
+      background-image: url('media/imgs/sandyFun_grey.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 0px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0px;
+      border:5px $trans-blue solid;
+  }
+  #three{
+      background-image: url('media/imgs/dandelion_grey.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 0px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0px;
+      border:5px $trans-blue solid;
+  }
+
+
+
+p{
+  padding-top: 70px;
+  padding-left: 20px;
+  letter-spacing: 0.3px;
+  line-height: 25px;
+  font-family: "Cardo";
+  font-size: 14px;
+  &::first-letter{
+    font-size: 30px;
+    color:$light-blue;
+    }
+
+  }
+}
