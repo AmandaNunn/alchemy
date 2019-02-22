@@ -1,17 +1,21 @@
 #nav{
   background: transparent;
+  padding-top: 20px;
 
   #navbar-menu{
     div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width:45%;
       a{
           color: $dark-blue;
           font-family: 'Ubuntu', sans-serif;
           font-weight: bold;
           padding: 10px 15px;
-          margin: 20px;
 
           &:hover{
-            background: $alchemy-white;
+            background-color: $alchemy-white;
           }
 
           img{
@@ -22,7 +26,26 @@
       .acitve-page{
           border: 2px solid $dark-blue;
       }
-
     }
   }
+}
+
+#nav.hidden-nav{
+  animation-name: removeNav;
+  animation-duration: .4s;
+  animation-fill-mode:forwards;
+}
+
+#nav.reveal-nav{
+  animation-name: showNav;
+  animation-duration: .7s;
+  animation-fill-mode:forwards;
+}
+@keyframes removeNav{
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
+@keyframes showNav{
+  from{opacity: 0;}
+  to{opacity: 1;}
 }

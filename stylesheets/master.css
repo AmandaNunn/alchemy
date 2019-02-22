@@ -78,19 +78,46 @@ body {
   font-feature-settings: "lnum"; }
 
 #nav {
-  background: transparent; }
-  #nav #navbar-menu div a {
-    color: #3A9DBB;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    padding: 10px 15px;
-    margin: 20px; }
-    #nav #navbar-menu div a:hover {
-      background: #f6f8f9; }
-    #nav #navbar-menu div a img {
-      max-height: 200px; }
-  #nav #navbar-menu div .acitve-page {
-    border: 2px solid #3A9DBB; }
+  background: transparent;
+  padding-top: 20px; }
+  #nav #navbar-menu div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%; }
+    #nav #navbar-menu div a {
+      color: #3A9DBB;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      padding: 10px 15px; }
+      #nav #navbar-menu div a:hover {
+        background-color: #f6f8f9; }
+      #nav #navbar-menu div a img {
+        max-height: 200px; }
+    #nav #navbar-menu div .acitve-page {
+      border: 2px solid #3A9DBB; }
+
+#nav.hidden-nav {
+  animation-name: removeNav;
+  animation-duration: .4s;
+  animation-fill-mode: forwards; }
+
+#nav.reveal-nav {
+  animation-name: showNav;
+  animation-duration: .7s;
+  animation-fill-mode: forwards; }
+
+@keyframes removeNav {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes showNav {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 #hero {
   display: flex;
@@ -102,18 +129,21 @@ body {
   background-image: url("media/imgs/alchemy_Hero_Img_sat.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  padding-top: 50px; }
   #hero .hero-body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
     #hero .hero-body .container {
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column; }
       #hero .hero-body .container .content {
+        height: 100%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -122,17 +152,18 @@ body {
           font-family: 'Futura', sans-serif;
           font-weight: 700;
           font-size: 100px;
-          color: #3A9DBB;
-          margin-top: 150px; }
+          color: #3A9DBB; }
         #hero .hero-body .container .content .button-highlight {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
           width: 45%;
-          height: 375px;
-          margin-top: 30px;
+          height: 60%;
           background-color: #3A9DBBB3; }
+          @media screen and (max-width: 638px) {
+            #hero .hero-body .container .content .button-highlight {
+              width: 400px; } }
         #hero .hero-body .container .content .button-hero {
           border: 4px #f6f8f9 solid;
           font-family: 'Ubuntu', sans-serif;
@@ -155,6 +186,7 @@ body {
     flex-direction: column; }
     #sub-hero .container .content {
       width: 100%;
+      padding-top: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -164,13 +196,13 @@ body {
         background-color: #61B1C9;
         color: #f6f8f9;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: 700;
         font-family: 'Futura', sans-serif;
         padding: 20px 0px;
         letter-spacing: 3px; }
       #sub-hero .container .content p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-family: 'Avenir Next', sans-serif;
         letter-spacing: 2px;
         font-weight: 600; }
@@ -233,39 +265,45 @@ body {
         font-family: 'Ubuntu', sans-serif;
         margin-bottom: 20px; }
 
-#carosel .columns {
-  width: 100%; }
-  #carosel .columns #left-arrow {
-    background: #61B1C9;
-    width: 5%;
+#carosel {
+  padding: 0px; }
+  #carosel .columns {
+    width: 100%;
+    margin: 0px; }
+    #carosel .columns #left-arrow {
+      background: #61B1C9;
+      width: 5%;
+      height: 475px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #carosel .columns #left-arrow:hover {
+        cursor: pointer;
+        transform: scale(1);
+        animation: slowGrow;
+        animation-duration: .4s;
+        animation-fill-mode: forwards; }
+  #carosel .carosel-card {
     height: 475px;
     display: flex;
     justify-content: center;
     align-items: center; }
-    #carosel .columns #left-arrow:hover {
-      cursor: pointer;
-      transform: scale(1.05, 1.05); }
-  #carosel .columns .carosel-card {
-    height: 475px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    #carosel .columns .carosel-card h1 {
+    #carosel .carosel-card h1 {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 700;
       color: #f6f8f9;
       font-size: 4em; }
-  #carosel .columns #left-carosel-card {
+  #carosel #left-carosel-card {
     background-image: url("media/imgs/dandelion_grey.jpg");
     background-size: cover;
     background-position: center left;
     background-repeat: no-repeat; }
-  #carosel .columns #featured-carosel-card {
+  #carosel #featured-carosel-card {
     background-image: url("media/imgs/happyJump_grey.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
-    #carosel .columns #featured-carosel-card .content {
+    #carosel #featured-carosel-card .content {
       width: 85%;
       height: 300px;
       background-color: #3A9DBBB3;
@@ -274,27 +312,44 @@ body {
       align-items: center;
       flex-direction: column;
       padding: 10px; }
-      #carosel .columns #featured-carosel-card .content h1 {
+      #carosel #featured-carosel-card .content:hover {
+        transform: scale(1);
+        animation: slowGrow;
+        animation-duration: .4s;
+        animation-fill-mode: forwards; }
+      #carosel #featured-carosel-card .content h1 {
         font-size: 2em; }
-      #carosel .columns #featured-carosel-card .content p {
+      #carosel #featured-carosel-card .content p {
         line-height: 1.45em; }
-  #carosel .columns #right-carosel-card {
+  #carosel #right-carosel-card {
     background-image: url("media/imgs/frollicking_grey.jpg");
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat; }
-  #carosel .columns #right-arrow {
+  #carosel #right-arrow {
     background: #61B1C9;
     width: 5%;
     height: 475px;
     display: flex;
     justify-content: center;
     align-items: center; }
-    #carosel .columns #right-arrow:hover {
+    #carosel #right-arrow:hover {
       cursor: pointer;
-      transform: scale(1.05, 1.05); }
-    #carosel .columns #right-arrow img {
+      transform: scale(1);
+      animation: slowGrow;
+      animation-duration: .4s;
+      animation-fill-mode: forwards; }
+    #carosel #right-arrow img {
       transform: rotateY(180deg); }
+
+@keyframes slowGrow {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.05); } }
 
 * {
   box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
