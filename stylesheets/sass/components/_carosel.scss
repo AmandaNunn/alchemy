@@ -1,8 +1,10 @@
 // CAROSEL
 
 #carosel{
+  padding: 0px;
   .columns{
     width: 100%;
+    margin: 0px;
 
     #left-arrow{
       background: $light-blue;
@@ -14,7 +16,11 @@
 
       &:hover{
         cursor: pointer;
-        transform: scale(1.05, 1.05);
+        transform: scale(1);
+        animation: slowGrow;
+        animation-duration: .4s;
+        animation-fill-mode: forwards;
+        }
       }
     }
     .carosel-card{
@@ -52,6 +58,13 @@
         flex-direction: column;
         padding: 10px;
 
+        &:hover{
+          transform: scale(1);
+          animation: slowGrow;
+          animation-duration: .4s;
+          animation-fill-mode: forwards;
+        }
+
         h1{
           font-size: 2em;
         }
@@ -77,12 +90,20 @@
 
         &:hover{
           cursor: pointer;
-          transform: scale(1.05, 1.05);
+          transform: scale(1);
+          animation: slowGrow;
+          animation-duration: .4s;
+          animation-fill-mode: forwards;
         }
 
       img{
         transform: rotateY(180deg);
       }
     }
-  }
+
+}
+
+@keyframes slowGrow{
+  from {transform: scale(1);}
+  to{transform: scale(1.05);}
 }
