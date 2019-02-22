@@ -26,11 +26,13 @@ function findYOffset(){
 
 function showNavBar(){
   var nav = document.getElementById('nav');
-  nav.classList.remove('is-hidden');
+  nav.classList.remove('hidden-nav');
+  nav.classList.add('reveal-nav');
 }
 function hideNavBar(){
   var nav = document.getElementById('nav');
-  nav.classList.add('is-hidden');
+  nav.classList.remove('reveal-nav');
+  nav.classList.add('hidden-nav');
 }
 
 window.addEventListener('scroll', function(){

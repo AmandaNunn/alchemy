@@ -22,7 +22,26 @@
       .acitve-page{
           border: 2px solid $dark-blue;
       }
-
     }
   }
+}
+
+#nav.hidden-nav{
+  animation-name: removeNav;
+  animation-duration: .4s;
+  animation-fill-mode:forwards;
+}
+
+#nav.reveal-nav{
+  animation-name: showNav;
+  animation-duration: .7s;
+  animation-fill-mode:forwards;
+}
+@keyframes removeNav{
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
+@keyframes showNav{
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
