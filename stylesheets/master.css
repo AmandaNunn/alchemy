@@ -79,19 +79,24 @@ body {
   font-feature-settings: "lnum"; }
 
 #nav {
-  background: transparent; }
-  #nav #navbar-menu div a {
-    color: #3A9DBB;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    padding: 10px 15px;
-    margin: 20px; }
-    #nav #navbar-menu div a:hover {
-      background: #f6f8f9; }
-    #nav #navbar-menu div a img {
-      max-height: 200px; }
-  #nav #navbar-menu div .acitve-page {
-    border: 2px solid #3A9DBB; }
+  background: transparent;
+  padding-top: 20px; }
+  #nav #navbar-menu div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%; }
+    #nav #navbar-menu div a {
+      color: #3A9DBB;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      padding: 10px 15px; }
+      #nav #navbar-menu div a:hover {
+        background-color: #f6f8f9; }
+      #nav #navbar-menu div a img {
+        max-height: 200px; }
+    #nav #navbar-menu div .acitve-page {
+      border: 2px solid #3A9DBB; }
 
 #nav.hidden-nav {
   animation-name: removeNav;
@@ -125,7 +130,8 @@ body {
   background-image: url("media/imgs/alchemy_Hero_Img_sat.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  padding-top: 50px; }
   #hero .hero-body {
     display: flex;
     justify-content: center;
@@ -269,57 +275,74 @@ body {
       align-items: center; }
       #carosel .columns #left-arrow:hover {
         cursor: pointer;
-        transform: scale(1.05, 1.05); }
-    #carosel .columns .carosel-card {
-      height: 475px;
+        transform: scale(1);
+        animation: slowGrow;
+        animation-duration: .4s;
+        animation-fill-mode: forwards; }
+  #carosel .carosel-card {
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #carosel .carosel-card h1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 700;
+      color: #f6f8f9;
+      font-size: 4em; }
+  #carosel #left-carosel-card {
+    background-image: url("media/imgs/dandelion_grey.jpg");
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat; }
+  #carosel #featured-carosel-card {
+    background-image: url("media/imgs/happyJump_grey.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    #carosel #featured-carosel-card .content {
+      width: 85%;
+      height: 300px;
+      background-color: #3A9DBBB3;
       display: flex;
       justify-content: center;
-      align-items: center; }
-      #carosel .columns .carosel-card h1 {
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 700;
-        color: #f6f8f9;
-        font-size: 4em; }
-    #carosel .columns #left-carosel-card {
-      background-image: url("media/imgs/dandelion_grey.jpg");
-      background-size: cover;
-      background-position: center left;
-      background-repeat: no-repeat; }
-    #carosel .columns #featured-carosel-card {
-      background-image: url("media/imgs/happyJump_grey.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; }
-      #carosel .columns #featured-carosel-card .content {
-        width: 85%;
-        height: 300px;
-        background-color: #3A9DBBB3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 10px; }
-        #carosel .columns #featured-carosel-card .content h1 {
-          font-size: 2em; }
-        #carosel .columns #featured-carosel-card .content p {
-          line-height: 1.45em; }
-    #carosel .columns #right-carosel-card {
-      background-image: url("media/imgs/frollicking_grey.jpg");
-      background-size: cover;
-      background-position: right center;
-      background-repeat: no-repeat; }
-    #carosel .columns #right-arrow {
-      background: #61B1C9;
-      width: 5%;
-      height: 475px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      #carosel .columns #right-arrow:hover {
-        cursor: pointer;
-        transform: scale(1.05, 1.05); }
-      #carosel .columns #right-arrow img {
-        transform: rotateY(180deg); }
+      align-items: center;
+      flex-direction: column;
+      padding: 10px; }
+      #carosel #featured-carosel-card .content:hover {
+        transform: scale(1);
+        animation: slowGrow;
+        animation-duration: .4s;
+        animation-fill-mode: forwards; }
+      #carosel #featured-carosel-card .content h1 {
+        font-size: 2em; }
+      #carosel #featured-carosel-card .content p {
+        line-height: 1.45em; }
+  #carosel #right-carosel-card {
+    background-image: url("media/imgs/frollicking_grey.jpg");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat; }
+  #carosel #right-arrow {
+    background: #61B1C9;
+    width: 5%;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #carosel #right-arrow:hover {
+      cursor: pointer;
+      transform: scale(1);
+      animation: slowGrow;
+      animation-duration: .4s;
+      animation-fill-mode: forwards; }
+    #carosel #right-arrow img {
+      transform: rotateY(180deg); }
+
+@keyframes slowGrow {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.05); } }
 
 * {
   box-sizing: border-box; }

@@ -1,17 +1,21 @@
 #nav{
   background: transparent;
+  padding-top: 20px;
 
   #navbar-menu{
     div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width:45%;
       a{
           color: $dark-blue;
           font-family: 'Ubuntu', sans-serif;
           font-weight: bold;
           padding: 10px 15px;
-          margin: 20px;
 
           &:hover{
-            background: $alchemy-white;
+            background-color: $alchemy-white;
           }
 
           img{
